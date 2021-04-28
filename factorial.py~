@@ -1,0 +1,12 @@
+number = int(input("Enter number : "))
+temp = number
+factorial = 1
+if number < 0:
+    print("Factorial does not exist for negative numbers")
+elif number == 0:
+    print("The factorial of 0 is 1")
+else:
+    while number > 0:
+        factorial *= number
+        number -= 1
+    print(f"The factorial of {temp} is {factorial}")

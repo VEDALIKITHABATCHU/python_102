@@ -1,0 +1,13 @@
+name = "Likitha"
+
+print("Continue Statement")
+for char in name:
+    if char == "t":
+        continue
+    print(char)
+
+print("Pass Statement")
+for char in name:
+    if char == "t":
+        pass
+    print(char)

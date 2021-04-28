@@ -1,0 +1,2 @@
+num = int(input("Enter number : "))
+print(f"{num} is palindrome" if str(num) == str(num)[::-1] else f"{num} is not palindrome")

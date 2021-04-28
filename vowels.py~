@@ -1,0 +1,8 @@
+def is_vowel(char: str) -> bool:
+    return char in ['a', 'e', 'i', 'o', 'u']
+
+def convert_string(str_list: [str]) -> str:
+    return "".join(str_list)
+
+string = input("Enter a string : ")
+print(convert_string([char.upper() if is_vowel(char) else char.lower() for char in string]))

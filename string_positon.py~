@@ -1,0 +1,14 @@
+word = input("Enter word : ")
+lenth_word = len(word)
+
+def line_count(word):
+    line_count = 0
+    for char in range(0, length_word):
+        line_count += (ord(string[char] - 97) * (26 ** (length - char - 1))
+        print(line_count)
+    return line_count + 1
+
+if(length_word == 7):
+    print("Line count : ",line_count(string.lower()))
+else:
+    print("Enter a 7 letter word!!")

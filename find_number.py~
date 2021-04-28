@@ -1,0 +1,6 @@
+number = int(input("Enter number : "))
+
+for num in range(100000000):
+    if num == number:
+        print("I got the number")
+        break

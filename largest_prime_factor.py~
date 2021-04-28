@@ -1,0 +1,22 @@
+from math import sqrt
+
+def smallest_prime_factor(num):
+    for divisior in range(2, int(sqrt(num)) + 1):
+        if num % divisior == 0:
+            return divisior
+    return num
+
+def largest_prime_factor(num):
+    count = 0
+    while 1:
+        smallest_factor = smallest_prime_factor(num)
+
+        if smallest_factor < num:
+            print(f"{count} : {num}/{smallest_factor}")
+            num //= smallest_factor
+        else:
+            return num
+        count += 1
+        print(f"{num/smallest_factor}")
+
+print(largest_prime_factor(600851475143))

@@ -1,0 +1,14 @@
+def all_odd_or_even(num_list):
+    odd = 0
+    even = 0
+    for num in num_list:
+        if num % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    return odd, even
+
+num_list = [100, 2304, 456, 57, 78, 21, 45, 785, 7, 89, 904, 574234, 84774488933]
+odd_count, even_count = all_odd_or_even(num_list)
+
+print(f"Odd Count: {odd_count} \n Even Count: {even_count}")

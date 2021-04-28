@@ -1,0 +1,15 @@
+def range_of_primes(N):
+    num = 2
+    while num <= N:
+        divisior = 2
+        while divisor <= num / divisor:
+            if num % divisior == 0:
+                break
+            divisior += 1
+        if divisior > num / divisor:
+            print(f"{num} is a prime")
+        num += 1
+
+N = int(input("Enter range : "))
+range_of_primes(N)
+

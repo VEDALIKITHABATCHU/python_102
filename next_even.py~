@@ -1,0 +1,6 @@
+#num = int(input("Enter number : "))
+#print(num + 2 if num % 2 == 0 else num + 1)
+def next_even(num : int) -> int:
+    return num + 2 if num % 2 == 0 else num + 1
+number = int(input("Enter number : "))
+print(next_even(number))
